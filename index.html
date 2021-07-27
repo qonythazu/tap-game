@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            background-color: whitesmoke;
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .darkmode {
+            background-color: black;
+            color: whitesmoke;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-around;
+            background-color: palegreen;
+            align-items: center;
+        }
+
+        .top h2 {
+            color: black;
+        }
+
+        button {
+            outline: none;
+            border: 1px dashed whitesmoke;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+            background-color: palegreen;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+
+        }
+    </style>
+    <title>Tap Tap Game</title>
+</head>
+<body onclick="tapping()">
+    <div class="top">
+        <h2>Tap Game for You</h2>
+        <button id="darkSwitch" onclick="dark()">Dark Mode</button>
+    </div>
+    <p id="task"></p>
+    <p id="confirmed"></p>
+    <h1 id="rank"></h1>
+    <button id="tapButton">Tap</button>
+    <p>by : Qonythazu   </p>
+
+    <script src="tap.js"></script>
+</body>
+</html>
